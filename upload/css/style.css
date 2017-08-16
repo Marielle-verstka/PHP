@@ -1,0 +1,86 @@
+.container {
+    width: 1140px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.l-container {
+    width: 33.33%;
+    background: #ccc;
+    box-sizing: border-box;
+    padding: 30px 20px;
+}
+.r-container {
+    width: 66.67%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background: #ddd;
+}
+.l-container span,
+.notice,
+.notice>span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.b-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.b-images>img {
+    display: block;
+    width: 30%;
+    margin-bottom: 25px;
+}
+.input_img {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.input_img + label,
+.submit_img {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+}
+.input_img + label {
+    padding: 6px;
+}
+.submit_img {
+    padding: 6px;
+    font-size: 1.1em;
+    margin-left: 60px;
+}
+.submit_img:hover {
+    background-color: green;
+}
+.input_img:focus + label,
+.input_img + label:hover {
+    background-color: red;
+}
+.input_img:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+.input_img + label * {
+    pointer-events: none;
+}
+.input_img:focus + label,
+.input_img.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+.submit_img {
+    border: 0;
+    outline: 0;
+
+}
